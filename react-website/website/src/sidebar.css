@@ -1,0 +1,51 @@
+.sidebar {
+    width: 300px;
+    height: 100%;
+    position: fixed;
+    right: 0;
+    top: 0;
+    background-color: #333;
+    overflow: visible;
+    z-index: 1;
+    transition: width 1000ms;
+  }
+
+  .arrow-icon {
+    transition: transform 1s; /* Apply transition here */
+  }
+  
+  .rotate {
+    transform: rotate(180deg) translate(-4px, 0);
+  }
+  
+  .expand-button:hover .rotate {
+    transform: rotate(180deg) scale(1.2) translate(-4px, 0);
+  }
+  
+  .sidebar.expanded {
+    width: 100%; /* Take up the entire screen width */
+  }
+  
+  .expand-button {
+    position: absolute;
+    left: -20px; /* Half of the button's width to center it on the edge */
+    top: 50%;
+    transform: translate(0, -50%); /* Center it vertically */
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: none;
+    background-color: #ccc;
+    font-size: 20px;
+    line-height: 40px; /* Center the arrow vertically within the button */
+    text-align: center; /* Center the arrow horizontally within the button */
+    cursor: pointer;
+    transition: transform 400ms; /* Smooth transition for growing */
+    display: flex;         /* Add Flexbox layout */
+    justify-content: center; /* Center horizontally */
+    align-items: center;     /* Center vertically */
+  
+  }
+  
+
+  

@@ -1,0 +1,110 @@
+.main-content {
+    margin: 0;
+    padding: 0;
+    flex: 1;
+    display: flex;
+    flex-direction: row; /* to stack the children vertically */
+    gap: max(0px, 1.5vw);  
+    align-items: center;
+    justify-content: left;
+    margin-left: calc(45vw - 300px);
+    font-family: 'Josefin Sans', sans-serif; /* Add this line */
+    font-style: normal;
+    background-color: #444; /* Added this line */
+    color: white; /* Added this line */
+}
+
+.content-container {
+  background-color: #444; /* Added this line */
+    padding-top:50px;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: left;
+}
+
+
+.text-content {
+  margin-bottom: 40px;
+  display: flex;
+  flex-direction: column;
+}
+
+.main-content h1, 
+.main-content h2 {
+    margin: 0;
+    padding: 0;
+}
+
+.main-content h1 {
+    margin-bottom: 5px;
+    margin-top: 40px;
+}
+
+/* For the "Hi, I'm Ritam!" part */
+.Name {
+    font-size: max(1.2em, 2.5vw); /* Adjusted font size */
+    margin-left:-2px;
+    text-shadow: 2px 2px 5px rgba(255,255,255,0.2); /* Adjusted text shadow for a white shadow */
+}
+
+@keyframes typing {
+    from { width: 0; }
+    to { width: 100%; }
+  }
+  
+  @keyframes blinkingCursor {
+    50% { border-color: transparent; }
+  }
+  
+/* For the typing effect part */
+.typing-effect {
+    min-height: 1em;
+    font-size: max(1em, 1.2vw); /* Adjusted font size */
+    display: inline-block;
+    overflow: hidden;
+    white-space: nowrap;
+    position: relative;
+    padding-right: 0.2em;
+}
+  
+.typing-effect::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-60%);
+    height: 80%;
+    width: 0.08em;
+    background-color: white; /* Adjusted for a white cursor */
+    animation: blinkingCursor 2s infinite;
+}
+  
+  @keyframes blinkingCursor {
+    50% { background-color: transparent; }
+  }
+
+  .typing-reveal {
+    animation: typing 60s steps(5, end); /* Typing effect */
+    max-width: 100%; /* Full width */
+    animation-fill-mode: forwards; /* Keeps the end state */
+  }
+
+  .headshot {
+    width: max(120px, 8vw);      /* Width of the image - can adjust as needed */
+    height: max(120px, 8vw);      /* Height of the image - should match width for circle */
+    border-radius: 50%; /* Makes it circular */
+    border: 5px solid #222; /* Optional: Adds a white border around the image */
+    object-fit: cover;  /* Ensures image is resized properly */
+    margin-left: 50px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+@media (max-width: 768px) {
+  .main-content { 
+    margin: 0;
+    align-items: center;
+    justify-content: center;
+  }
+}

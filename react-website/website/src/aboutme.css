@@ -1,0 +1,49 @@
+/* AboutMe.css */
+
+.about-me {
+    margin: 0;
+    padding: 0;
+    flex: 1;
+    display: flex;
+    flex-direction: column; /* changed to column to stack children vertically */
+    align-items: left;
+    justify-content: left;
+    margin-left: calc(45vw - 300px);
+    padding-right:500px;
+    gap: 20px;  
+    font-family: 'Josefin Sans', sans-serif; /* Taken from your provided styles */
+    font-style: normal;
+    background-color: #444; /* Taken from your provided styles */
+    color: white; /* Taken from your provided styles */
+}
+
+.about-me h2 {
+    margin: 0;
+    padding: 0;
+    text-align: left;
+    align-items: left;
+    justify-content: left;
+    margin-bottom: -30px;
+    font-size: max(1.2em, 1.5vw);
+    text-shadow: 2px 2px 5px rgba(255,255,255,0.2);
+}
+
+.about-me p {
+    font-size: max(16px,1vw);
+    min-width: max(426.66px,26.66vw); /* Setting a max-width for better readability on large screens */
+    max-width: max(426.66px,26.66vw);
+    text-align: left;
+    white-space: wrap;
+}
+
+@media (max-width: 768px) {
+  .about-me { 
+    padding-right: 0px;
+    margin: 0;
+    align-items: center;
+    justify-content: left;
+  }
+  .about-me h2 {
+    margin-left: -341px;
+  }
+}
