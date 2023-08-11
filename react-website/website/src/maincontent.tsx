@@ -5,7 +5,7 @@ import AboutMe from './aboutme';
 
 const MainContent: React.FC = () => {
   const [currentText, setCurrentText] = useState("");
-  const fullTexts = ["I'm a problem solver.", "I'm a leader.", "I'm a tinkerer."];
+  const fullTexts = ["I'm a problem solver.", "I'm a risk taker.", "I'm a maker."];
   const [textIndex, setTextIndex] = useState(0);
   const [isDeleting, setIsDeleting] = useState(false);
 
