@@ -1,13 +1,16 @@
+html, body {margin: 0; height: 100%; overflow: hidden}
+
+
 .main-content {
     margin: 0;
     padding: 0;
-    flex: 1;
+    flex: 0;
     display: flex;
     flex-direction: row; /* to stack the children vertically */
     gap: max(0px, 1.5vw);  
-    align-items: center;
+    align-items: flex-start;
     justify-content: left;
-    margin-left: calc(45vw - 300px);
+    margin-left: calc(45vw - 350px);
     font-family: 'Josefin Sans', sans-serif; /* Add this line */
     font-style: normal;
     background-color: #444; /* Added this line */
@@ -15,10 +18,11 @@
 }
 
 .content-container {
+  height: 100vh;
   background-color: #444; /* Added this line */
   font-family: 'Josefin Sans', sans-serif; /* Add this line */
     font-style: normal;
-    padding-top:50px;
+    padding-top:160px;
     display: flex;
     color: white;
     flex-direction: column;
@@ -105,6 +109,9 @@
 }
 
 @media (max-width: 768px) {
+  .content-container { 
+    padding-top: 50px;
+  }
   .main-content { 
     margin: 0;
     align-items: center;

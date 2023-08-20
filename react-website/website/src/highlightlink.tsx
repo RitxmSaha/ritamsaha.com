@@ -25,28 +25,19 @@ const HighlightLink: React.FC<Props> = ({ text, link }) => {
         display: 'inline-flex',
         alignItems: 'center',
         borderRadius: '5px',
-        padding: '2px',
-        paddingRight: hovered ? '25px' : '2px',  // Adjusts the padding on hover
-        transition: 'padding 0.3s ease',
+        padding: '1px',
+        marginTop: '1px',
+        paddingLeft: '2px',
+        marginBottom: '1px',
+        paddingRight: '3px',
+        transition: 'padding 0.3s ease, box-shadow 0.3s ease, opacity 0.5s ease', // Added opacity to transition
         whiteSpace: 'nowrap',
         overflow: 'hidden',
+        boxShadow: hovered ? '0px 0px 5px rgba(100, 100, 100, 1)' : 'none',  // Box shadow added on hover
+        opacity: hovered ? '1' : '0.8', // Adjust opacity from 0.5 (initial) to 1 on hover
       }}
     >
       <span>{text}</span>
-      <Box 
-        component="span" 
-        marginLeft="-19px"
-        sx={{
-          opacity: hovered ? 1 : 0,
-          color: 'white',
-          visibility: hovered ? 'visible' : 'hidden', 
-          transform: 'translateX(21px)',  // <-- Added this line to move it 25px to the right
-          transition: `opacity 0.3s ease ${hovered ? '0.3s' : '0s'}`, // Delays the opacity transition on hover
-          display: 'flex', // Ensures that the icon is centered
-        }}
-      >
-        <SearchIcon color="inherit" fontSize="small" style={{color: 'white'}} />
-      </Box>
     </Box>
   );
 };

@@ -35,15 +35,17 @@ const MainContent: React.FC = () => {
   }, [currentText, isDeleting, textIndex]);
 
   return (
-    <div className="content-container">
-      <main className="main-content">
-          <div className="text-content">
-              <h1><span className="Name">Hi, I'm Ritam! </span></h1>
-              <h2><span className="typing-effect">{currentText}</span></h2>
-          </div>
-          <img src={headshot} alt="Ritam's Headshot" className="headshot" />
-      </main>
-      <AboutMe />
+    <div className="main-section">
+      <div className="content-container">
+        <main className="main-content">
+            <div className="text-content">
+                <h1><span className="Name">Hi, I'm Ritam! </span></h1>
+                <h2><span className="typing-effect">{currentText}</span></h2>
+            </div>
+            <img src={headshot} alt="Ritam's Headshot" className="headshot" />
+        </main>
+        <AboutMe />
+      </div>
     </div>
     
 

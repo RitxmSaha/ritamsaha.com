@@ -1,0 +1,61 @@
+.project-container {
+
+    margin-top:50px;
+    margin-left: 25px;
+    margin-right: 10px;
+    margin-bottom: 20px;
+    padding: 10px;
+    padding-bottom: 2.5em;
+
+    font-family: 'Josefin Sans', sans-serif; /* Add this line */
+    font-style: normal;
+    background-color: #888; /* You can adjust this to a color of your choice */
+    border-radius: 20px;
+
+
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+
+.projects-wrapper {
+    
+    transform: translate3d(0, 0, 0);
+    will-change: transform;
+    height: 2640px; /* 4 projects * 200px each */
+    overflow: hidden;  /* Hide the excess projects while animating */
+    
+  }
+
+
+
+.project-container:hover {
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.1);
+}
+
+.sidebar .project-container:first-of-type {
+    margin-top: 75px;  /* Adjust as needed */
+}
+
+
+
+.project-image {
+    width: 100%;
+    display: block;
+    max-height: 200px;
+    height: 100%; /* Make image take the full height of its parent */
+    object-fit: cover; /* Image will cover the box, preserving aspect ratio */
+    max-width: 100%;
+    border-radius: 20px; /* To keep the image corners rounded */
+}
+
+.project-title {
+    margin-left: 4px;
+    display: block;
+    font-size: 1.2em;
+    margin-top: 10px; /* Add a little space above the title */
+    text-align: left; /* Center the title */
+    font-weight: bold;
+}

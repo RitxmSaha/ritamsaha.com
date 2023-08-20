@@ -8,7 +8,7 @@
     flex-direction: column; /* changed to column to stack children vertically */
     align-items: left;
     justify-content: left;
-    margin-left: calc(45vw - 300px);
+    margin-left: calc(45vw - 350px);
     padding-right:500px;
     gap: 20px;  
     font-family: 'Josefin Sans', sans-serif; /* Taken from your provided styles */
@@ -28,13 +28,17 @@
     text-shadow: 2px 2px 5px rgba(255,255,255,0.2);
 }
 
+
+
 .about-me p {
-    font-size: max(16px,1vw);
-    min-width: max(426.66px,26.66vw); /* Setting a max-width for better readability on large screens */
-    max-width: max(426.66px,26.66vw);
+  line-height: 23px;
+    position: relative;
+    font-size: max(15px,1vw);
+    width: calc(max(426.66px,26.66vw) + 20px);
     text-align: left;
-    white-space: wrap;
+    white-space: pre-wrap;
 }
+
 
 @media (max-width: 768px) {
   .about-me { 

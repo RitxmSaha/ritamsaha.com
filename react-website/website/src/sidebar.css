@@ -1,5 +1,5 @@
 .sidebar {
-    width: 300px;
+    width: 375px;
     height: 100%;
     position: fixed;
     right: 0;
@@ -10,12 +10,25 @@
     transition: width 1000ms;
   }
 
+  .projects-wrapper {
+    opacity: 1;
+    transition: opacity 0.5s ease-out; /* 0.5s can be adjusted to your preferred duration */
+  }
+
+  .sidebar.expanded .projects-wrapper {
+    opacity: 0;
+  }
+
   .arrow-icon {
     transition: transform 1s; /* Apply transition here */
   }
   
   .rotate {
     transform: rotate(180deg) translate(-4px, 0);
+  }
+
+  .expand-button:hover {
+    transform: scale(1.1) translate(0px, -18px);
   }
   
   .expand-button:hover .rotate {
@@ -27,6 +40,7 @@
   }
   
   .expand-button {
+    z-index: 10000;
     position: absolute;
     left: -20px; /* Half of the button's width to center it on the edge */
     top: 50%;
@@ -46,6 +60,8 @@
     align-items: center;     /* Center vertically */
   
   }
+
+
   
 
   
