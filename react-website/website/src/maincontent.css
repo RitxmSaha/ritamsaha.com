@@ -1,16 +1,14 @@
 html, body {margin: 0; height: 100%; overflow: hidden}
 
-
 .main-content {
     margin: 0;
     padding: 0;
     flex: 0;
     display: flex;
+    align-items: center;
+    justify-content: center;
     flex-direction: row; /* to stack the children vertically */
     gap: max(0px, 1.5vw);  
-    align-items: flex-start;
-    justify-content: left;
-    margin-left: calc(45vw - 350px);
     font-family: 'Josefin Sans', sans-serif; /* Add this line */
     font-style: normal;
     background-color: #444; /* Added this line */
@@ -18,16 +16,17 @@ html, body {margin: 0; height: 100%; overflow: hidden}
 }
 
 .content-container {
+  align-items: center;
+  justify-content: center;
   height: 100vh;
   background-color: #444; /* Added this line */
   font-family: 'Josefin Sans', sans-serif; /* Add this line */
     font-style: normal;
-    padding-top:160px;
+    padding-top:140px;
     display: flex;
     color: white;
     flex-direction: column;
-    align-items: left;
-    justify-content: left;
+    align-items: center;
 }
 
 
@@ -37,7 +36,6 @@ html, body {margin: 0; height: 100%; overflow: hidden}
   flex-direction: column;
 }
 
-.main-content h1, 
 .main-content h2 {
     margin: 0;
     padding: 0;
@@ -104,16 +102,13 @@ html, body {margin: 0; height: 100%; overflow: hidden}
     border: 5px solid #222; /* Optional: Adds a white border around the image */
     object-fit: cover;  /* Ensures image is resized properly */
     margin-left: 50px;
-    margin-top: 20px;
-    margin-bottom: 20px;
 }
 
 @media (max-width: 768px) {
   .content-container { 
-    padding-top: 50px;
+    padding-top: 160px;
   }
   .main-content { 
-    margin: 0;
     align-items: center;
     justify-content: center;
   }

@@ -11,21 +11,6 @@
 
 
 
-.navbar a {
-  font-family: 'Josefin Sans', sans-serif; /* Add this line */
-  font-size: 25px; /* Adjust the font size */
-  float: left;
-  display: block;
-  color: white;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-  transition: color 400ms;
-}
-
-.navbar a:hover {
-  color: #ccc;
-}
 
 body {
   margin: 0;

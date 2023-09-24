@@ -8,8 +8,6 @@
     flex-direction: column; /* changed to column to stack children vertically */
     align-items: left;
     justify-content: left;
-    margin-left: calc(45vw - 350px);
-    padding-right:500px;
     gap: 20px;  
     font-family: 'Josefin Sans', sans-serif; /* Taken from your provided styles */
     font-style: normal;
@@ -37,17 +35,4 @@
     width: calc(max(426.66px,26.66vw) + 20px);
     text-align: left;
     white-space: pre-wrap;
-}
-
-
-@media (max-width: 768px) {
-  .about-me { 
-    padding-right: 0px;
-    margin: 0;
-    align-items: center;
-    justify-content: left;
-  }
-  .about-me h2 {
-    margin-left: -341px;
-  }
 }

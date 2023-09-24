@@ -35,7 +35,6 @@ const MainContent: React.FC = () => {
   }, [currentText, isDeleting, textIndex]);
 
   return (
-    <div className="main-section">
       <div className="content-container">
         <main className="main-content">
             <div className="text-content">
@@ -46,7 +45,6 @@ const MainContent: React.FC = () => {
         </main>
         <AboutMe />
       </div>
-    </div>
     
 
   );
